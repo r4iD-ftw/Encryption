@@ -142,8 +142,8 @@ int check(long int k)
 	while(no!=0)
 	{
 		rem = no % 10;
-		if(rem>0 && rem<=COLS);
-		else return 0;
+		if(rem<=0 || rem>COLS)
+			return 0;
 		count++;
 		no = no / 10;
 	}	
